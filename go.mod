@@ -58,10 +58,16 @@ require (
 	golang.org/x/tools v0.0.0-20200410132612-ae9902aceb98 // indirect
 	google.golang.org/genproto v0.0.0-20200729003335-053ba62fc06f // indirect
 	google.golang.org/grpc v1.29.1
-	google.golang.org/protobuf v1.25.0
+	google.golang.org/protobuf v1.25.0 // indirect
 	gopkg.in/cheggaaa/pb.v1 v1.0.28
 	gopkg.in/h2non/gock.v1 v1.0.15
 	gopkg.in/yaml.v2 v2.3.0
 	honnef.co/go/tools v0.0.1-2020.1.4 // indirect
 	sigs.k8s.io/yaml v1.2.0 // indirect
 )
+
+replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
+
+replace github.com/coreos/bbolt => go.etcd.io/bbolt v1.3.5
+
+replace go.etcd.io/bbolt => github.com/coreos/bbolt v1.3.5

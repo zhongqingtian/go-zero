@@ -2,12 +2,11 @@ package logic
 
 import (
 	"context"
-
-	"shorturl/api/internal/svc"
-	"shorturl/api/internal/types"
 	"shorturl/rpc/transform/transformer"
 
 	"github.com/tal-tech/go-zero/core/logx"
+	"shorturl/api/internal/svc"
+	"shorturl/api/internal/types"
 )
 
 type ShortenLogic struct {
